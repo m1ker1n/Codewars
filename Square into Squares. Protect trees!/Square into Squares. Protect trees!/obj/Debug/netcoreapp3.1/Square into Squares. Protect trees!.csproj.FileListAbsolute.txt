@@ -1,0 +1,13 @@
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\bin\Debug\netcoreapp3.1\Square into Squares. Protect trees!.exe
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\bin\Debug\netcoreapp3.1\Square into Squares. Protect trees!.deps.json
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\bin\Debug\netcoreapp3.1\Square into Squares. Protect trees!.runtimeconfig.json
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\bin\Debug\netcoreapp3.1\Square into Squares. Protect trees!.runtimeconfig.dev.json
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\bin\Debug\netcoreapp3.1\Square into Squares. Protect trees!.dll
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\bin\Debug\netcoreapp3.1\Square into Squares. Protect trees!.pdb
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\obj\Debug\netcoreapp3.1\Square into Squares. Protect trees!.csproj.AssemblyReference.cache
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\obj\Debug\netcoreapp3.1\Square into Squares. Protect trees!.AssemblyInfoInputs.cache
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\obj\Debug\netcoreapp3.1\Square into Squares. Protect trees!.AssemblyInfo.cs
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\obj\Debug\netcoreapp3.1\Square into Squares. Protect trees!.csproj.CoreCompileInputs.cache
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\obj\Debug\netcoreapp3.1\Square into Squares. Protect trees!.dll
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\obj\Debug\netcoreapp3.1\Square into Squares. Protect trees!.pdb
+C:\Users\WHOAMI\Desktop\Kata\Square into Squares. Protect trees!\Square into Squares. Protect trees!\obj\Debug\netcoreapp3.1\Square into Squares. Protect trees!.genruntimeconfig.cache

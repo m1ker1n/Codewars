@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Rome2Integer/1.0.0": {
+        "runtime": {
+          "Rome2Integer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Rome2Integer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

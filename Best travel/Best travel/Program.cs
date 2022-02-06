@@ -1,50 +1,82 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Best_travel
 {
-
-    #region [Recursive algorithm. Too slow, but suppose works]
-    /*
     public static class SumOfK
     {
-        private static List<int> attended = new List<int>();
+        class Town
+        {
+            Town previousTown;
+            List<Town> availableTownsToVisit;
+            int townsLeftToVisit;
+
+            public int? maxAvailableDistance { get; private set; } = null;
+            int distanceCovered;
+            static int maxPossibleDistance;
+
+            private Town(Town previousTown, int townsLeftToVisit, int distanceCovered)
+            {
+                this.previousTown = previousTown;
+                this.townsLeftToVisit = townsLeftToVisit;
+                this.distanceCovered = distanceCovered;
+                availableTownsToVisit = new List<Town>();
+            }
+
+            public Town(Town previousTown, List<int> distancesToAvailableTowns, int townsLeftToVisit, int distanceCovered, int maxDistanceToCover)
+                : this(previousTown, townsLeftToVisit, distanceCovered)
+            {
+                Town.maxPossibleDistance = maxDistanceToCover;
+                AddAvailableTowns(distancesToAvailableTowns);
+            }
+
+            void AddAvailableTowns(List<int> distancesToAvailableTowns)
+            {
+                if (townsLeftToVisit == 0)
+                {
+                    EvaluateMaxDistanceCovered();
+                    return;
+                }
+
+                int index = 1;
+                foreach(var item in distancesToAvailableTowns)
+                {
+                    Town available = new Town(this, townsLeftToVisit - 1, distanceCovered + item);
+                    availableTownsToVisit.Add(available);
+                    available.AddAvailableTowns(distancesToAvailableTowns.GetRange(index, distancesToAvailableTowns.Count - index));
+                    index++;
+                }
+
+                EvaluateMaxDistanceCovered();
+            }
+
+            void EvaluateMaxDistanceCovered()
+            { 
+                if (distanceCovered > Town.maxPossibleDistance) return;
+
+                if (availableTownsToVisit.Count == 0)
+                {
+                    if (townsLeftToVisit == 0) maxAvailableDistance = distanceCovered;
+                    return;
+                }
+
+                foreach(var item in availableTownsToVisit)
+                {
+                    if (item.maxAvailableDistance == null) continue;
+
+                    maxAvailableDistance = (maxAvailableDistance > item.maxAvailableDistance) ? maxAvailableDistance : item.maxAvailableDistance;
+                }
+            }
+        }
 
         //return null if no ways to get pathway < t and k
         public static int? chooseBestSum(int t, int k, List<int> ls)
         {
-            if (k > ls.Count) return null; //if i need visit more towns than possible, must be checked only once
-            if (t < 0) return null;
-            if (k == 0) return 0; //already visited max amount of towns
-
-            int? max = -1; //max can't be negative, because every distance >= 0;
-
-            foreach(var item in ls)
-            {
-                if (attended.Contains(item)) continue; //if town is attended, no need to come back
-
-                attended.Add(item);
-                int? temp = chooseBestSum(t - item, k - 1, ls);
-                if (temp != null) max = (max > item + temp) ? max : item + temp;
-                attended.Remove(item);
-            }
-
-            return (max == -1) ? null : max; //if max == -1 then there weren't any possible ways
+            Town town = new Town(null, ls, k, 0, t);
+            return town.maxAvailableDistance;
         }
     }
-    */
-    #endregion
-
-    #region [Trying do it another way another day]
-    public static class SumOfK
-    {
-        private static List<int> attended = new List<int>();
-        public static int? chooseBestSum(int t, int k, List<int> ls)
-        {
-            return null;
-        }
-    }
-    #endregion
 
     class Program
     {

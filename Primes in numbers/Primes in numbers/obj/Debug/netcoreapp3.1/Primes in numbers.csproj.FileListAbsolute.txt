@@ -1,0 +1,12 @@
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\bin\Debug\netcoreapp3.1\Primes in numbers.exe
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\bin\Debug\netcoreapp3.1\Primes in numbers.deps.json
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\bin\Debug\netcoreapp3.1\Primes in numbers.runtimeconfig.json
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\bin\Debug\netcoreapp3.1\Primes in numbers.runtimeconfig.dev.json
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\bin\Debug\netcoreapp3.1\Primes in numbers.dll
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\bin\Debug\netcoreapp3.1\Primes in numbers.pdb
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\obj\Debug\netcoreapp3.1\Primes in numbers.AssemblyInfoInputs.cache
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\obj\Debug\netcoreapp3.1\Primes in numbers.AssemblyInfo.cs
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\obj\Debug\netcoreapp3.1\Primes in numbers.csproj.CoreCompileInputs.cache
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\obj\Debug\netcoreapp3.1\Primes in numbers.dll
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\obj\Debug\netcoreapp3.1\Primes in numbers.pdb
+C:\Users\WHOAMI\Desktop\Kata\Primes in numbers\Primes in numbers\obj\Debug\netcoreapp3.1\Primes in numbers.genruntimeconfig.cache

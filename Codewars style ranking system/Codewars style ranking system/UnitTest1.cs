@@ -103,23 +103,45 @@ namespace Codewars_style_ranking_system
         }
 
         [Test]
-        public void IncProgress_95ProgressP7CompletesP8_RankUp5Progress()
+        public void IncProgress_95ProgressP7CompletesP8_RankUp0Progress()
         {
             var user = new TestUser(7, 95);
 
             user.incProgress(8);
 
-            UserAssert(user, 8, 5);
+            UserAssert(user, 8, 0);
         }
 
         [Test]
-        public void IncProgress_P8Completes100TasksP8_300Progress()
+        public void IncProgress_P8Completes100TasksP8_0Progress()
         {
             var user = new TestUser(8, 0);
 
             for (int i = 0; i < 100; i++) user.incProgress(8);
 
-            UserAssert(user, 8, 300);
+            UserAssert(user, 8, 0);
+        }
+
+        [Test]
+        public void IncProgress_MultipleInc()
+        {
+            var user = new TestUser();
+
+            for (int i = 0; i < 5; i++)
+                user.incProgress(1);
+
+            user.incProgress(2);
+            user.incProgress(2);
+
+
+            user.incProgress(-1);
+
+            user.incProgress(3);
+
+            for (int i = 0; i < 10; i++)
+                user.incProgress(8);
+
+            UserAssert(user, 8, 0);
         }
         #endregion
     }

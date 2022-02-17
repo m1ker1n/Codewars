@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Codewars_style_ranking_system
 {
@@ -34,6 +30,8 @@ namespace Codewars_style_ranking_system
         {
             if (!IsValidRank(activityRank)) throw new ArgumentException("Activity rank doesn't exist");
 
+            if (this.rank == rankArray[rankArray.Length - 1]) return;
+
             int differenceInRankings = FindIndex(activityRank) - this.currentRankIndex;
 
             if (differenceInRankings < -1) return;
@@ -58,12 +56,18 @@ namespace Codewars_style_ranking_system
 
         private void TryRankUp()
         {
-            while(this.progress>=progressLimit)
+            while (this.progress >= progressLimit
+                  && this.currentRankIndex != rankArray.Length - 1)
             {
-                if (this.currentRankIndex == rankArray.Length - 1) return;
+
                 this.progress -= progressLimit;
                 this.currentRankIndex++;
                 this.rank = rankArray[this.currentRankIndex];
+            }
+            if (this.currentRankIndex == rankArray.Length - 1)
+            {
+                this.progress = 0;
+                return;
             }
         }
 
